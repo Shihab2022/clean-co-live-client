@@ -1,15 +1,19 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = ({children}) => {
+  //children takay props hisaby niay si karon dasiui ar dower use krlay ay ti korty hobay
+  //potom ay sokol route kay jay name ay nav bar link tar componant ar vitory app.js file import kory osabo
+  //navbar ay children name destruchrig korbo
+  //say children takay dinamically jay jaigai content lika asay sykanay bosabo
     return (
 <div class="drawer  drawer-end">
   <input id="my-drawer-3" type="checkbox" class="drawer-toggle" /> 
   <div class="drawer-content flex flex-col">
 
-    <div class="w-full navbar bg-base-200">
+    <div class="w-full navbar lg:px-20 bg-base-200">
    
-      <div class="flex-1 px-2 mx-2">Navbar Title</div>
+      <div class="flex-1 px-2 mx-2 text-2xl font-bold ">Clean Co..</div>
       <div class="flex-none hidden lg:block">
         <ul class="menu menu-horizontal gap-x-2">
       
@@ -18,6 +22,8 @@ const Navbar = ({children}) => {
           <li><NavLink className='rounded-xl ' to='/service'>SERVICES</NavLink></li>
           <li><NavLink className='rounded-xl ' to='/contact'>CONTACT</NavLink></li>
           <li><NavLink className='rounded-xl ' to='/login'>LOGIN</NavLink></li>
+          <button data-toggle-theme="dark,light" data-act-class="ACTIVECLASS">to</button>
+          <li><NavLink className='rounded-xl btn btn-outline btn-primary ' to='/'>BOOK NOW</NavLink></li>
        
         </ul>
       </div>
