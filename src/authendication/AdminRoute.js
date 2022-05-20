@@ -7,7 +7,7 @@ const AdminRoute = () => {
     const [admin]=UseAdmin()
     
     if(!admin){
-        return <Navigate to='/login' state={{from :location}} replace></Navigate>
+        return <Navigate to='/'  replace></Navigate>
     }
     return <Outlet/>
 };
