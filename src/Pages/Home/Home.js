@@ -1,9 +1,11 @@
 import React from 'react';
+import Landing from './Landing';
 
 const Home = () => {
     return (
         <div>
-            <h4>this is home page . </h4>
+          
+            <Landing></Landing>
         </div>
     );
 };
